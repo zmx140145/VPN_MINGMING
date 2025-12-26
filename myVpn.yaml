@@ -9,17 +9,17 @@ proxies:
   - name: "美国服务器"
     type: vmess
     server: 154.12.36.176
-    port: 443
+    port: 8443
     uuid: e1885c01-09cd-4ab9-a768-f9ccf91c0524
     alterId: 0
     cipher: auto
     udp: true
-    tls: false  # 与你的 "security": "none" 对应
+    tls: false # 与你的 "security": "none" 对应
     skip-cert-verify: false
-    network: ws  # 与你的 "network": "ws" 对应
+    network: ws # 与你的 "network": "ws" 对应
     ws-opts:
-      path: "/"  # 已确认，与你的 "path": "/" 完全一致
-      headers: {}  # 与你的 "headers": {} 对应
+      path: "/" # 已确认，与你的 "path": "/" 完全一致
+      headers: {} # 与你的 "headers": {} 对应
 
 proxy-groups:
   - name: "PROXY"
